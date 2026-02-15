@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Admin Grievance Panel</title>
+    <link rel="stylesheet" href="css/admin-grievance.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar admin-sidebar">
+        <h2 class="logo">NEXUS ADMIN</h2>
+
+        <ul class="nav-menu">
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li class="active"><a href="admin-grievance.html">Grievances</a></li>
+            <li><a href="admin-students.html">Students</a></li>
+            <li><a href="admin-staff.html">Staff</a></li>
+            <li><a href="admin-internships.html">Internships</a></li>
+            <li><a href="admin-announcements.html">Announcements</a></li>
+            <li><a href="admin-attendance.html">Attendance</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar admin-top-bar">
+            <div>
+                <h1>Grievance Management</h1>
+                <p class="subtitle">Review, manage and resolve student grievances</p>
+            </div>
+        </header>
+
+        <!-- FILTER BAR -->
+        <section class="card filter-card">
+            <h2>Filter Grievances</h2>
+
+            <div class="filter-row">
+                <select>
+                    <option>All Categories</option>
+                    <option>Academic</option>
+                    <option>Faculty</option>
+                    <option>Infrastructure</option>
+                    <option>Examination</option>
+                </select>
+
+                <select>
+                    <option>All Status</option>
+                    <option>Pending</option>
+                    <option>In Review</option>
+                    <option>Resolved</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- GRIEVANCE LIST -->
+        <section class="card grievance-list-card">
+            <h2>Submitted Grievances</h2>
+
+            <table class="grievance-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#1021</td>
+                        <td>Rehan Khan</td>
+                        <td>Academic</td>
+                        <td>Delay in internal marks update</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>
+                            <button class="action-btn review">Review</button>
+                            <button class="action-btn resolve">Resolve</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#1022</td>
+                        <td>Arjun Mehta</td>
+                        <td>Infrastructure</td>
+                        <td>Lab systems not functioning</td>
+                        <td><span class="status review">In Review</span></td>
+                        <td>
+                            <button class="action-btn review">Review</button>
+                            <button class="action-btn resolve">Resolve</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- INFO CARD -->
+        <section class="card info-card">
+            <h2>Admin Responsibility</h2>
+            <p>
+                Administrators must ensure all grievances are reviewed fairly
+                and resolved within the institutional guidelines to maintain
+                transparency and student satisfaction.
+            </p>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/admin-grievance.js"></script>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+</body>
+</html>

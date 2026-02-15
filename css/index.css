@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= ROOT ================= */
+:root {
+    --bg-dark: #070b14;
+    --neon-cyan: #00f6ff;
+    --neon-pink: #ff2fd1;
+    --text-main: #e6f1ff;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: "Orbitron", "Poppins", sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-main);
+    overflow-x: hidden;
+    cursor: none;
+}
+
+/* ================= CUSTOM CURSOR ================= */
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: var(--neon-cyan);
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    box-shadow: 
+        0 0 8px var(--neon-cyan),
+        0 0 16px rgba(0,246,255,0.6);
+}
+
+.cursor-ring {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,246,255,0.4);
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        0 0 20px rgba(0,246,255,0.4);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(7,11,20,0.75);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0,246,255,0.25);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: var(--neon-cyan);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.nav-links a:hover {
+    color: var(--neon-pink);
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: url("../img/bg-admin.jpg") center / cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        rgba(0,246,255,0.15),
+        rgba(255,47,209,0.12),
+        rgba(0,0,0,0.75)
+    );
+}
+
+.hero-content {
+    position: relative;
+    max-width: 620px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    letter-spacing: 6px;
+}
+
+.hero-content p {
+    margin: 20px 0 40px;
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 32px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+}
+
+.primary-btn {
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+}
+
+.primary-btn:hover {
+    background: var(--neon-cyan);
+    color: #070b14;
+}
+
+.secondary-btn {
+    border-color: var(--neon-pink);
+    color: var(--neon-pink);
+}
+
+.secondary-btn:hover {
+    background: rgba(255,47,209,0.15);
+}
+
+/* ================= FEATURES ================= */
+.features {
+    padding: 100px 8%;
+    background: #090f1e;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: var(--neon-cyan);
+}
+
+.feature-cards {
+    display: flex;
+    gap: 40px;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 35px;
+    background: linear-gradient(
+        145deg,
+        rgba(0,246,255,0.08),
+        rgba(122,92,255,0.08)
+    );
+    border: 1px solid rgba(0,246,255,0.35);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px var(--neon-pink);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    padding: 25px;
+    text-align: center;
+    background: #05080f;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .feature-cards {
+        flex-direction: column;
+    }
+    .hero-content h1 {
+        font-size: 46px;
+    }
+}
+/* ===== JS CURSOR FIX ===== */
+.cursor-dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: #00f6ff;
+    border-radius: 2px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0 0 10px #00f6ff;
+}
+
+.cursor-glow {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0,246,255,0.4);
+    box-shadow: 
+        0 0 20px rgba(0,246,255,0.6),
+        0 0 40px rgba(0,246,255,0.4);
+    z-index: 9998;
+}

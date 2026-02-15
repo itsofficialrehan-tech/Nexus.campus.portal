@@ -1,0 +1,126 @@
+
+body {
+    background: radial-gradient(circle at top, #120b04, #050301 70%);
+    color: #f5f2eb;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 280px;
+    background: linear-gradient(180deg, #0d0804, #050301);
+    border-right: 1px solid rgba(255,215,0,0.18);
+    padding: 34px 22px;
+}
+
+.logo {
+    text-align: center;
+    color: #ffd700;
+    letter-spacing: 5px;
+    margin-bottom: 45px;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #d8cfae;
+}
+
+.nav-menu li.active a,
+.nav-menu li a:hover {
+    background: rgba(255,215,0,0.25);
+    box-shadow: 0 0 25px rgba(255,215,0,0.7);
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 46px;
+}
+
+.admin-top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.admin-top-bar h1 {
+    color: #ffd700;
+    font-size: 34px;
+}
+
+.subtitle {
+    opacity: 0.7;
+}
+
+.top-actions {
+    display: flex;
+    gap: 14px;
+}
+
+.mark-btn,
+.report-btn {
+    padding: 12px 24px;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(135deg,#ffd700,#ffae00);
+}
+
+.card {
+    background: rgba(15,10,5,0.85);
+    border-radius: 26px;
+    padding: 34px;
+    border: 1px solid rgba(255,215,0,0.18);
+    box-shadow: 0 0 45px rgba(255,215,0,0.18);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 34px;
+}
+
+.metric-card {
+    text-align: center;
+    padding: 28px;
+    border-radius: 22px;
+    background: rgba(255,215,0,0.08);
+}
+
+.metric-card h2 {
+    font-size: 34px;
+    color: #ffd700;
+}
+
+.attendance-table {
+    display: grid;
+    gap: 14px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255,215,0,0.06);
+}
+
+.table-header {
+    background: rgba(255,215,0,0.18);
+    color: #ffd700;
+}
+
+.status.good { color: #00ff99; }
+.status.warning { color: #ffb703; }
+.status.danger { color: #ff6b6b; }

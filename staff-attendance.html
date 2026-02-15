@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Staff Attendance</title>
+
+    <link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/staff-attendance.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <nav class="nav">
+            <a href="staff-dashboard.html">Dashboard</a>
+            <a href="staff-attendance.html" class="active">Attendance</a>
+            <a href="staff-assignments.html">Assignments</a>
+            <a href="staff-grievance.html">Grievance</a>
+            <a href="staff-announcements.html">Announcements</a>
+            <a href="staff-students.html">Students</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div>
+                <h1>Attendance Control</h1>
+                <p class="subtitle">
+                    Mark, monitor, and analyze student attendance
+                </p>
+            </div>
+
+            <div class="top-right">
+                <span class="live">● LIVE</span>
+                <span class="clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- ================= ATTENDANCE ACTIONS ================= -->
+        <section class="panel attendance-actions">
+            <h2>Quick Actions</h2>
+
+            <div class="actions">
+                <button class="action-btn">Mark Attendance</button>
+                <button class="action-btn">Edit Attendance</button>
+                <button class="action-btn">Export Report</button>
+            </div>
+        </section>
+
+        <!-- ================= ATTENDANCE STATS ================= -->
+        <section class="kpi">
+            <div class="kpi-card">
+                <h3>128</h3>
+                <span>Total Students</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>112</h3>
+                <span>Present Today</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>9</h3>
+                <span>Absent</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>7</h3>
+                <span>Late</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>87%</h3>
+                <span>Avg Attendance</span>
+            </div>
+        </section>
+
+        <!-- ================= STUDENT LIST ================= -->
+        <section class="panel attendance-table-panel">
+            <h2>Today’s Attendance</h2>
+
+            <div class="attendance-table">
+
+                <div class="table-row table-header">
+                    <span>ID</span>
+                    <span>Name</span>
+                    <span>Course</span>
+                    <span>Status</span>
+                    <span>Action</span>
+                </div>
+
+                <div class="table-row">
+                    <span>NX-2026-001</span>
+                    <span>Rehan Khan</span>
+                    <span>BCA – AI</span>
+                    <span class="status present">Present</span>
+                    <span>
+                        <button class="mark absent">Absent</button>
+                    </span>
+                </div>
+
+                <div class="table-row">
+                    <span>NX-2026-014</span>
+                    <span>Ayaan Shaikh</span>
+                    <span>BCA – DS</span>
+                    <span class="status late">Late</span>
+                    <span>
+                        <button class="mark present">Present</button>
+                    </span>
+                </div>
+
+                <div class="table-row">
+                    <span>NX-2026-041</span>
+                    <span>Sarah Khan</span>
+                    <span>BSc – CS</span>
+                    <span class="status absent">Absent</span>
+                    <span>
+                        <button class="mark present">Present</button>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= ACTIVITY ================= -->
+        <section class="panel">
+            <h2>Attendance Activity</h2>
+            <div class="activity-feed"></div>
+        </section>
+
+    </main>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/staff-attendance.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Staff Grievance</title>
+
+<link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/staff-grievance.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <nav class="nav">
+            <a href="staff-dashboard.html">Dashboard</a>
+            <a href="staff-attendance.html">Attendance</a>
+            <a href="staff-assignments.html">Assignments</a>
+            <a href="staff-grievance.html" class="active">Grievance</a>
+            <a href="staff-announcements.html">Announcements</a>
+            <a href="staff-students.html">Students</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div>
+                <h1>Grievance Resolution Center</h1>
+                <p class="subtitle">
+                    Review, process, and resolve student grievances
+                </p>
+            </div>
+
+            <div class="top-right">
+                <span class="live">● LIVE</span>
+                <span class="clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- ===============================
+             FILTERS
+        =============================== -->
+        <section class="panel filter-panel">
+            <h2>Filter Grievances</h2>
+
+            <div class="filters">
+                <select>
+                    <option>All Categories</option>
+                    <option>Academic</option>
+                    <option>Faculty</option>
+                    <option>Infrastructure</option>
+                    <option>Examination</option>
+                </select>
+
+                <select>
+                    <option>All Status</option>
+                    <option>Pending</option>
+                    <option>In Review</option>
+                    <option>Resolved</option>
+                </select>
+
+                <button class="action-btn">Apply Filters</button>
+            </div>
+        </section>
+
+        <!-- ===============================
+             GRIEVANCE TABLE
+        =============================== -->
+        <section class="panel grievances-panel">
+            <h2>Student Grievances</h2>
+
+            <div class="grievance-table">
+
+                <!-- HEADER -->
+                <div class="table-row table-header">
+                    <span>ID</span>
+                    <span>Student</span>
+                    <span>Category</span>
+                    <span>Submitted On</span>
+                    <span>Status</span>
+                    <span>Actions</span>
+                </div>
+
+                <!-- ROW 1 -->
+                <div class="table-row">
+                    <span>GRV-201</span>
+                    <span>Rehan Khan</span>
+                    <span>Academic</span>
+                    <span>12 Feb 2026</span>
+                    <span class="status pending">Pending</span>
+                    <span class="row-actions">
+                        <button class="view">View</button>
+                        <button class="review">Review</button>
+                    </span>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="table-row">
+                    <span>GRV-224</span>
+                    <span>Ayaan Shaikh</span>
+                    <span>Infrastructure</span>
+                    <span>10 Feb 2026</span>
+                    <span class="status review">In Review</span>
+                    <span class="row-actions">
+                        <button class="view">View</button>
+                        <button class="resolve">Resolve</button>
+                    </span>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="table-row">
+                    <span>GRV-238</span>
+                    <span>Sarah Khan</span>
+                    <span>Examination</span>
+                    <span>08 Feb 2026</span>
+                    <span class="status resolved">Resolved</span>
+                    <span class="row-actions">
+                        <button class="view">View</button>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===============================
+             ACTIVITY FEED
+        =============================== -->
+        <section class="panel">
+            <h2>Grievance Activity</h2>
+            <div class="activity-feed"></div>
+        </section>
+
+    </main>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+
+<script src="js/staff-grievance.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Staff Dashboard</title>
+<link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/staff-dashboard.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <nav class="nav">
+            <a href="staff-dashboard.html" class="active">Dashboard</a>
+            <a href="staff-attendance.html">Attendance</a>
+            <a href="staff-assignments.html">Assignments</a>
+            <a href="staff-grievance.html">Grievance</a>
+            <a href="staff-announcements.html">Announcements</a>
+            <a href="staff-students.html">Students</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+
+        <!-- ===============================
+             TOP HERO BAR
+        =============================== -->
+        <header class="hero-bar">
+            <div>
+                <h1>Welcome, Staff</h1>
+                <p class="subtitle">
+                    Control Center • Academic Operations • Student Oversight
+                </p>
+            </div>
+
+            <div class="hero-info">
+                <span class="role-badge">STAFF PANEL</span>
+                <span id="liveTime">--:--</span>
+            </div>
+        </header>
+
+        <!-- ===============================
+             LIVE METRICS
+        =============================== -->
+        <section class="metrics-grid">
+
+            <div class="metric-card">
+                <h2>1248</h2>
+                <p>Total Students</p>
+            </div>
+
+            <div class="metric-card neon">
+                <h2>86%</h2>
+                <p>Today Attendance</p>
+            </div>
+
+            <div class="metric-card warning">
+                <h2>14</h2>
+                <p>Pending Grievances</p>
+            </div>
+
+            <div class="metric-card danger">
+                <h2>6</h2>
+                <p>Assignments Due</p>
+            </div>
+
+            <div class="metric-card">
+                <h2>3</h2>
+                <p>New Announcements</p>
+            </div>
+
+            <div class="metric-card neon">
+                <h2>91%</h2>
+                <p>Performance Index</p>
+            </div>
+
+        </section>
+
+        <!-- ===============================
+             QUICK ACTIONS
+        =============================== -->
+        <section class="panel">
+            <h2>Quick Actions</h2>
+
+            <div class="actions-grid">
+                <a href="staff-attendance.html" class="action-tile">Mark Attendance</a>
+                <a href="staff-assignments.html" class="action-tile">Upload Assignment</a>
+                <a href="staff-grievance.html" class="action-tile">Review Grievances</a>
+                <a href="staff-announcements.html" class="action-tile">Post Announcement</a>
+                <a href="staff-students.html" class="action-tile">Student Directory</a>
+            </div>
+        </section>
+
+        <!-- ===============================
+             STUDENT SNAPSHOT
+        =============================== -->
+        <section class="panel">
+            <h2>Student Snapshot</h2>
+
+            <div class="snapshot-table">
+                <div class="row header">
+                    <span>ID</span>
+                    <span>Name</span>
+                    <span>Status</span>
+                    <span>Attendance</span>
+                </div>
+
+                <div class="row">
+                    <span>NX-2026-001</span>
+                    <span>Rehan Khan</span>
+                    <span class="status active">Active</span>
+                    <span>56%</span>
+                </div>
+
+                <div class="row">
+                    <span>NX-2026-014</span>
+                    <span>Ayaan Shaikh</span>
+                    <span class="status inactive">Inactive</span>
+                    <span>48%</span>
+                </div>
+
+                <div class="row">
+                    <span>NX-2025-112</span>
+                    <span>Sarah Khan</span>
+                    <span class="status blocked">Blocked</span>
+                    <span>32%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+             GRIEVANCE OVERVIEW
+        =============================== -->
+        <section class="panel">
+            <h2>Grievance Status</h2>
+
+            <div class="progress-group">
+                <div class="progress-item">
+                    <label>Pending</label>
+                    <div class="bar"><span style="width: 60%"></span></div>
+                </div>
+
+                <div class="progress-item">
+                    <label>In Review</label>
+                    <div class="bar"><span style="width: 30%"></span></div>
+                </div>
+
+                <div class="progress-item">
+                    <label>Resolved</label>
+                    <div class="bar"><span style="width: 85%"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+             ACTIVITY TIMELINE
+        =============================== -->
+        <section class="panel">
+            <h2>System Activity</h2>
+
+            <ul class="activity-log">
+                <li>Attendance marked for Semester 4</li>
+                <li>DBMS Assignment uploaded</li>
+                <li>Grievance reviewed – NX-2026-001</li>
+                <li>Announcement posted: Internship Drive</li>
+            </ul>
+        </section>
+
+    </main>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/staff-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Settings</title>
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <ul class="nav-menu">
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="grievance.html">Grievance</a></li>
+            <li><a href="lost-found.html">Lost & Found</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li class="active"><a href="settings.html">Settings</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <h1>Settings</h1>
+            <p class="subtitle">Manage your account preferences</p>
+        </header>
+
+        <!-- PROFILE SETTINGS -->
+        <section class="card settings-card">
+            <h2>Profile Information</h2>
+
+            <div class="settings-group">
+                <label>Full Name</label>
+                <input type="text" value="Rehan Khan" disabled>
+            </div>
+
+            <div class="settings-group">
+                <label>Email</label>
+                <input type="email" value="rehan@student.campus.edu" disabled>
+            </div>
+
+            <div class="settings-group">
+                <label>Course</label>
+                <input type="text" value="BCA - Artificial Intelligence" disabled>
+            </div>
+        </section>
+
+        <!-- PASSWORD SETTINGS -->
+        <section class="card settings-card">
+            <h2>Change Password</h2>
+
+            <div class="settings-group">
+                <label>Current Password</label>
+                <input type="password" placeholder="Current password">
+            </div>
+
+            <div class="settings-group">
+                <label>New Password</label>
+                <input type="password" placeholder="New password">
+            </div>
+
+            <div class="settings-group">
+                <label>Confirm New Password</label>
+                <input type="password" placeholder="Confirm new password">
+            </div>
+
+            <button class="submit-btn">Update Password</button>
+        </section>
+
+        <!-- PREFERENCES -->
+        <section class="card settings-card">
+            <h2>Preferences</h2>
+
+            <div class="settings-toggle">
+                <span>Enable Notifications</span>
+                <input type="checkbox" checked>
+            </div>
+
+            <div class="settings-toggle">
+                <span>Dark Mode</span>
+                <input type="checkbox" checked>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>

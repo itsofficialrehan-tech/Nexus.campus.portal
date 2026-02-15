@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Lost & Found</title>
+    <link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/lost-found.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <ul class="nav-menu">
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="grievance.html">Grievance</a></li>
+            <li class="active"><a href="lost-found.html">Lost & Found</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <h1>Lost & Found</h1>
+            <p class="subtitle">Report lost items or check found items on campus</p>
+        </header>
+
+        <!-- REPORT LOST ITEM -->
+        <section class="card lost-form-card">
+            <h2>Report Lost Item</h2>
+
+            <form class="lost-form">
+                <div class="form-group">
+                    <label>Item Name</label>
+                    <input type="text" placeholder="e.g. Wallet, ID Card, Phone">
+                </div>
+
+                <div class="form-group">
+                    <label>Category</label>
+                    <select>
+                        <option value="">Select category</option>
+                        <option>Documents</option>
+                        <option>Electronics</option>
+                        <option>Accessories</option>
+                        <option>Books</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Last Seen Location</label>
+                    <input type="text" placeholder="Library, Lab, Hostel, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea placeholder="Additional details about the item"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Report</button>
+            </form>
+        </section>
+
+        <!-- FOUND ITEMS LIST -->
+        <section class="card found-items-card">
+            <h2>Found Items</h2>
+
+            <div class="found-list">
+                <div class="found-item">
+                    <h3>Black Wallet</h3>
+                    <p>Found near Library</p>
+                    <span>Status: Available</span>
+                </div>
+
+                <div class="found-item">
+                    <h3>Student ID Card</h3>
+                    <p>Found in Computer Lab</p>
+                    <span>Status: Claimed</span>
+                </div>
+
+                <div class="found-item">
+                    <h3>Wireless Earbuds</h3>
+                    <p>Found in Hostel Block B</p>
+                    <span>Status: Available</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUIDELINES -->
+        <section class="card lost-info-card">
+            <h2>Guidelines</h2>
+            <p>
+                Please provide accurate information when reporting lost items.
+                Found items can be claimed after verification from the campus office.
+            </p>
+        </section>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/lost-found.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Staff Announcements</title>
+
+    <!-- CSS (next step) -->
+     <link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/staff-announcements.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <nav class="nav">
+            <a href="staff-dashboard.html">Dashboard</a>
+            <a href="staff-attendance.html">Attendance</a>
+            <a href="staff-assignments.html">Assignments</a>
+            <a href="staff-grievance.html">Grievance</a>
+            <a href="staff-announcements.html" class="active">Announcements</a>
+            <a href="staff-students.html">Students</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div>
+                <h1>Announcement Control</h1>
+                <p class="subtitle">
+                    Publish and review official announcements
+                </p>
+            </div>
+
+            <div class="top-right">
+                <span class="live">● LIVE</span>
+                <span class="clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- ===============================
+             ANNOUNCEMENT LIST
+        =============================== -->
+        <section class="panel">
+            <h2>Published Announcements</h2>
+
+            <div class="announcement-table">
+
+                <div class="table-row table-header">
+                    <span>ID</span>
+                    <span>Title</span>
+                    <span>Audience</span>
+                    <span>Date</span>
+                    <span>Action</span>
+                </div>
+
+                <div class="table-row" data-title="Internship Fair"
+                     data-content="Internship fair will be conducted on Friday in the main auditorium."
+                     data-audience="All Students">
+                    <span>ANN-101</span>
+                    <span>Internship Fair</span>
+                    <span>All Students</span>
+                    <span>15 Feb 2026</span>
+                    <span><button class="view-btn">View</button></span>
+                </div>
+
+                <div class="table-row" data-title="Attendance Review"
+                     data-content="Attendance review for Semester 4 will be conducted next week."
+                     data-audience="Semester 4">
+                    <span>ANN-114</span>
+                    <span>Attendance Review</span>
+                    <span>Semester 4</span>
+                    <span>13 Feb 2026</span>
+                    <span><button class="view-btn">View</button></span>
+                </div>
+
+                <div class="table-row" data-title="Exam Form Deadline"
+                     data-content="Last date to fill examination forms is 20 Feb 2026."
+                     data-audience="Final Year">
+                    <span>ANN-132</span>
+                    <span>Exam Form Deadline</span>
+                    <span>Final Year</span>
+                    <span>10 Feb 2026</span>
+                    <span><button class="view-btn">View</button></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===============================
+             ANNOUNCEMENT INFO PANEL
+        =============================== -->
+        <section class="panel info-panel">
+            <h2>Announcement Details</h2>
+
+            <div class="info-box">
+                <p><strong>Title:</strong> <span id="infoTitle">Select an announcement</span></p>
+                <p><strong>Audience:</strong> <span id="infoAudience">—</span></p>
+                <p><strong>Description:</strong></p>
+                <p id="infoContent" class="info-text">
+                    Click on “View” to see announcement details here.
+                </p>
+            </div>
+        </section>
+
+    </main>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+
+<script src="js/staff-announcements.js"></script>
+</body>
+</html>

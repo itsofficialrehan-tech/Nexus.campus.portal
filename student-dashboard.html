@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/student-dashboard.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <ul class="nav-menu">
+            <li class="active">
+                <a href="student-dashboard.html">Dashboard</a>
+            </li>
+            <li>
+                <a href="academics.html">Academics</a>
+            </li>
+            <li>
+                <a href="attendance.html">Attendance</a>
+            </li>
+            <li>
+                <a href="internships.html">Internships</a>
+            </li>
+            <li>
+                <a href="grievance.html">Grievance</a>
+            </li>
+            <li>
+                <a href="lost-found.html">Lost & Found</a>
+            </li>
+            <li>
+                <a href="announcements.html">Announcements</a>
+            </li>
+            <li>
+                <a href="#">Settings</a>
+            </li>
+            <li class="logout">
+                <a href="login.html">Logout</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <h1>Hello Student 👋</h1>
+
+            <div class="top-actions">
+                <input type="text" placeholder="Search">
+                <span class="profile">Student</span>
+            </div>
+        </header>
+
+        <!-- DASHBOARD GRID -->
+        <section class="dashboard-grid">
+
+            <!-- LEFT COLUMN -->
+            <div class="left-section">
+
+                <div class="card welcome-card">
+                    <h3>Welcome Back!</h3>
+                    <p>
+                        Manage your academics, attendance, and campus activities
+                        from one unified dashboard.
+                    </p>
+                </div>
+
+                <div class="card academics-card">
+                    <h3>Academic Resources</h3>
+                    <p>
+                        Access subject-wise notes, learning materials, and
+                        track your academic progress efficiently.
+                    </p>
+                </div>
+
+                <div class="card attendance-card">
+                    <h3>Attendance Overview</h3>
+                    <ul>
+                        <li>DBMS – 82%</li>
+                        <li>Operating Systems – 76%</li>
+                        <li>Computer Networks – 88%</li>
+                        <li>Web Development – 91%</li>
+                        <li>Software Engineering – 79%</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="right-section">
+
+                <div class="card stats-card">
+                    <h3>Your Activity</h3>
+
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h4>Internships</h4>
+                            <p>12 Available</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h4>Grievances</h4>
+                            <p>2 Active</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h4>Lost Items</h4>
+                            <p>1 Found</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card announcement-card">
+                    <h3>Announcements</h3>
+                    <ul>
+                        <li>📢 Internship fair this Friday</li>
+                        <li>📢 Attendance review next week</li>
+                        <li>📢 New academic resources uploaded</li>
+                    </ul>
+                </div>
+
+                <div class="card events-card">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>📅 Hackathon – Next Week</li>
+                        <li>📅 Webinar on AI Careers</li>
+                        <li>📅 Campus Sports Meet</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/student-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+/* BODY */
+body {
+    background: radial-gradient(circle at top, #120b04, #050301 70%);
+    color: #f5f2eb;
+    min-height: 100vh;
+}
+
+/* LAYOUT */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================================
+   SIDEBAR (ADMIN)
+========================================= */
+.admin-sidebar {
+    width: 280px;
+    background: linear-gradient(180deg, #0d0804, #050301);
+    border-right: 1px solid rgba(255, 215, 0, 0.18);
+    padding: 34px 22px;
+}
+
+.logo {
+    text-align: center;
+    color: #ffd700;
+    letter-spacing: 5px;
+    margin-bottom: 45px;
+    font-size: 22px;
+    text-shadow: 0 0 20px rgba(255,215,0,0.8);
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-bottom: 12px;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #d8cfae;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-menu li a:hover,
+.nav-menu li.active a {
+    background: linear-gradient(
+        135deg,
+        rgba(255,215,0,0.25),
+        rgba(255,170,0,0.12)
+    );
+    color: #fff;
+    box-shadow: 0 0 25px rgba(255,215,0,0.7);
+}
+
+.logout a {
+    color: #ff6b6b;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+.main-content {
+    flex: 1;
+    padding: 40px 46px;
+}
+
+/* =========================================
+   TOP BAR
+========================================= */
+.admin-top-bar {
+    margin-bottom: 40px;
+}
+
+.admin-top-bar h1 {
+    font-size: 34px;
+    color: #ffd700;
+    text-shadow: 0 0 25px rgba(255,215,0,0.7);
+}
+
+.subtitle {
+    opacity: 0.7;
+}
+
+/* =========================================
+   CARD STYLE
+========================================= */
+.card {
+    background: rgba(15, 10, 5, 0.85);
+    border-radius: 26px;
+    padding: 34px;
+    margin-bottom: 34px;
+    border: 1px solid rgba(255,215,0,0.18);
+    box-shadow: 0 0 45px rgba(255,215,0,0.18);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 70px rgba(255,215,0,0.45);
+}
+
+.card h2 {
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   FILTER BAR
+========================================= */
+.filter-row {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-row select {
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: rgba(255,215,0,0.08);
+    border: 1px solid rgba(255,215,0,0.35);
+    color: #fff;
+    outline: none;
+}
+
+/* =========================================
+   GRIEVANCE TABLE
+========================================= */
+.grievance-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grievance-table th,
+.grievance-table td {
+    padding: 16px 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.grievance-table thead {
+    background: rgba(255,215,0,0.18);
+}
+
+.grievance-table tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transition: background 0.3s ease;
+}
+
+.grievance-table tbody tr:hover {
+    background: rgba(255,215,0,0.08);
+}
+
+/* STATUS TAGS */
+.status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pending {
+    background: rgba(255,183,3,0.18);
+    color: #ffb703;
+}
+
+.review {
+    background: rgba(0,200,255,0.18);
+    color: #00c8ff;
+}
+
+.resolved {
+    background: rgba(0,255,153,0.18);
+    color: #00ff99;
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+    transition: all 0.3s ease;
+}
+
+.action-btn.review {
+    background: rgba(0,200,255,0.25);
+    color: #00c8ff;
+}
+
+.action-btn.resolve {
+    background: rgba(0,255,153,0.25);
+    color: #00ff99;
+}
+
+.action-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 25px rgba(255,215,0,0.7);
+}
+
+/* =========================================
+   INFOMATIONNN CARD
+========================================= */
+.info-card p {
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 1100px) {
+    .filter-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .admin-sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 24px;
+    }
+}

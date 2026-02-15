@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Login</title>
+
+    <!-- GLOBAL CURSOR (ONLY CSS LINK, NO DIVS) -->
+    <link rel="stylesheet" href="css/global-cursor.css">
+
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <div class="login-wrapper">
+
+        <!-- LEFT PANEL -->
+        <div class="login-left">
+            <div class="left-content">
+                <h2>NEXUS CAMPUS</h2>
+                <p>
+                    A secure, scalable and role-based digital campus platform<br>
+                    built with modern web standards.
+                </p>
+
+                <ul class="dev-features">
+                    <li>✔ Role-Based Access Control</li>
+                    <li>✔ Secure Authentication Flow</li>
+                    <li>✔ Modular System Design</li>
+                    <li>✔ API-Ready Architecture</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="login-right">
+
+            <h1>Hi User 👋</h1>
+            <p class="subtitle">Login to your Nexus Campus account</p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="user@campus.edu" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Select Role</label>
+                    <select required>
+                        <option value="">Choose your role</option>
+                        <option>Student</option>
+                        <option>Admin</option>
+                        <option>Staff / Teacher</option>
+                    </select>
+                </div>
+
+                <button type="submit">Login</button>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <button type="button" class="google-login">
+                    Sign in with Google
+                </button>
+            </form>
+
+            <p class="bottom-text">
+                Secured by modern authentication standards
+            </p>
+
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+
+    </div>
+
+    <!-- ✅ GLOBAL CURSOR JS (CREATES CURSOR INTERNALLY) -->
+    <script src="js/global-cursor.js"></script>
+
+    <!-- PAGE JS -->
+    <script src="js/login.js"></script>
+
+</body>
+</html>

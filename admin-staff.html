@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Admin – Staff Control</title>
+    <link rel="stylesheet" href="css/admin-staff.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <ul class="nav-menu">
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-grievance.html">Grievances</a></li>
+            <li><a href="admin-students.html">Students</a></li>
+            <li class="active"><a href="admin-staff.html">Staff Control</a></li>
+            <li><a href="admin-internships.html">Internships</a></li>
+            <li><a href="admin-announcements.html">Announcements</a></li>
+            <li><a href="admin-attendance.html">Attendance</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div>
+                <h1>Staff Control Center</h1>
+                <p class="subtitle">
+                    Manage faculty authority, roles, workload & access permissions
+                </p>
+            </div>
+
+            <div class="top-actions">
+                <input type="text" placeholder="Search staff / department / role">
+                <button class="add-btn">+ Add Staff</button>
+            </div>
+        </header>
+
+        <!-- ===============================
+             STAFF ANALYTICS
+        =============================== -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h2>86</h2>
+                <p>Total Staff</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>58</h2>
+                <p>Teaching Faculty</p>
+            </div>
+
+            <div class="stat-card warning">
+                <h2>18</h2>
+                <p>Administrative</p>
+            </div>
+
+            <div class="stat-card danger">
+                <h2>10</h2>
+                <p>Restricted Access</p>
+            </div>
+        </section>
+
+        <!-- ===============================
+             STAFF DIRECTORY
+        =============================== -->
+        <section class="card staff-section">
+            <h2>Faculty & Staff Directory</h2>
+
+            <div class="staff-table">
+
+                <!-- HEADER -->
+                <div class="table-row table-header">
+                    <span>ID</span>
+                    <span>Name</span>
+                    <span>Department</span>
+                    <span>Role</span>
+                    <span>Access Level</span>
+                    <span>Status</span>
+                    <span>Actions</span>
+                </div>
+
+                <!-- ROW 1 -->
+                <div class="table-row">
+                    <span>ST-101</span>
+                    <span>Dr. Anil Sharma</span>
+                    <span>Computer Science</span>
+                    <span>Professor</span>
+                    <span class="badge high">Full</span>
+                    <span class="status active">Active</span>
+                    <span class="actions">
+                        <button class="view">Profile</button>
+                        <button class="edit">Permissions</button>
+                        <button class="block">Restrict</button>
+                    </span>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="table-row">
+                    <span>ST-205</span>
+                    <span>Ms. Riya Mehta</span>
+                    <span>Information Technology</span>
+                    <span>Assistant Professor</span>
+                    <span class="badge medium">Medium</span>
+                    <span class="status active">Active</span>
+                    <span class="actions">
+                        <button class="view">Profile</button>
+                        <button class="edit">Permissions</button>
+                        <button class="block">Restrict</button>
+                    </span>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="table-row">
+                    <span>ST-309</span>
+                    <span>Mr. Sameer Khan</span>
+                    <span>Administration</span>
+                    <span>Office Staff</span>
+                    <span class="badge low">Limited</span>
+                    <span class="status inactive">Inactive</span>
+                    <span class="actions">
+                        <button class="view">Profile</button>
+                        <button class="activate">Restore</button>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===============================
+             ROLE & AUTHORITY OVERVIEW
+        =============================== -->
+        <section class="card authority-card">
+            <h2>Role Authority Matrix</h2>
+
+            <ul class="authority-list">
+                <li>Professor – Academic control, grading, attendance</li>
+                <li>Assistant Professor – Teaching & evaluations</li>
+                <li>Office Staff – Records & administration</li>
+                <li>HOD – Department-level authority</li>
+            </ul>
+        </section>
+
+        <!-- ===============================
+             STAFF PROFILE MODAL
+        =============================== -->
+        <div class="modal hidden">
+            <div class="modal-box">
+                <h2>Staff Profile</h2>
+
+                <p><strong>Name:</strong> Dr. Anil Sharma</p>
+                <p><strong>ID:</strong> ST-101</p>
+                <p><strong>Department:</strong> Computer Science</p>
+                <p><strong>Role:</strong> Professor</p>
+                <p><strong>Access Level:</strong> Full</p>
+                <p><strong>Status:</strong> Active</p>
+
+                <div class="modal-actions">
+                    <button class="close-btn">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/admin-staff.js"></script>
+</body>
+</html>

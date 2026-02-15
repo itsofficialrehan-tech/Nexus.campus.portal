@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Staff – Students</title>
+
+    <link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/staff-students.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <nav class="nav">
+            <a href="staff-dashboard.html">Dashboard</a>
+            <a href="staff-attendance.html">Attendance</a>
+            <a href="staff-assignments.html">Assignments</a>
+            <a href="staff-grievance.html">Grievance</a>
+            <a href="staff-announcements.html">Announcements</a>
+            <a href="staff-students.html" class="active">Students</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div>
+                <h1>Student Management</h1>
+                <p class="subtitle">
+                    View, analyze, and monitor student records
+                </p>
+            </div>
+
+            <div class="top-right">
+                <input type="text" id="searchInput" placeholder="Search by name or ID">
+                <select id="statusFilter">
+                    <option value="all">All</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                    <option value="blocked">Blocked</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- ===============================
+             STUDENT TABLE
+        =============================== -->
+        <section class="panel">
+            <h2>Registered Students</h2>
+
+            <div class="student-table">
+
+                <div class="table-row table-header">
+                    <span>ID</span>
+                    <span>Name</span>
+                    <span>Course</span>
+                    <span>Semester</span>
+                    <span>Status</span>
+                    <span>Action</span>
+                </div>
+
+                <div class="table-row student-row"
+                     data-name="rehan khan"
+                     data-id="NX-2026-001"
+                     data-status="active"
+                     data-course="BCA – AI"
+                     data-sem="4"
+                     data-email="rehan@student.edu"
+                     data-attendance="56%">
+                    <span>NX-2026-001</span>
+                    <span>Rehan Khan</span>
+                    <span>BCA – AI</span>
+                    <span>4</span>
+                    <span class="status active">Active</span>
+                    <span><button class="view-btn">View</button></span>
+                </div>
+
+                <div class="table-row student-row"
+                     data-name="ayaan shaikh"
+                     data-id="NX-2026-014"
+                     data-status="inactive"
+                     data-course="BCA – DS"
+                     data-sem="3"
+                     data-email="ayaan@student.edu"
+                     data-attendance="48%">
+                    <span>NX-2026-014</span>
+                    <span>Ayaan Shaikh</span>
+                    <span>BCA – DS</span>
+                    <span>3</span>
+                    <span class="status inactive">Inactive</span>
+                    <span><button class="view-btn">View</button></span>
+                </div>
+
+                <div class="table-row student-row"
+                     data-name="sarah khan"
+                     data-id="NX-2025-112"
+                     data-status="blocked"
+                     data-course="BSc – CS"
+                     data-sem="6"
+                     data-email="sarah@student.edu"
+                     data-attendance="32%">
+                    <span>NX-2025-112</span>
+                    <span>Sarah Khan</span>
+                    <span>BSc – CS</span>
+                    <span>6</span>
+                    <span class="status blocked">Blocked</span>
+                    <span><button class="view-btn">View</button></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===============================
+             STUDENT INFO PANEL
+        =============================== -->
+        <section class="panel info-panel">
+            <h2>Student Details</h2>
+
+            <div class="info-box">
+                <p><strong>Name:</strong> <span id="infoName">Select a student</span></p>
+                <p><strong>ID:</strong> <span id="infoId">—</span></p>
+                <p><strong>Course:</strong> <span id="infoCourse">—</span></p>
+                <p><strong>Semester:</strong> <span id="infoSem">—</span></p>
+                <p><strong>Email:</strong> <span id="infoEmail">—</span></p>
+                <p><strong>Attendance:</strong> <span id="infoAttendance">—</span></p>
+                <p><strong>Status:</strong> <span id="infoStatus">—</span></p>
+            </div>
+        </section>
+
+    </main>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/staff-students.js"></script>
+</body>
+</html>

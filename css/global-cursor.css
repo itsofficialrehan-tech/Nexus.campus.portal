@@ -1,0 +1,83 @@
+/* ===============================
+   GLOBAL CURSOR RESET
+=============================== */
+* {
+  cursor: none !important;
+}
+
+img,
+video,
+canvas {
+  pointer-events: none;
+}
+
+/* ===============================
+   CENTER DOT
+=============================== */
+.cursor-dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 8px rgba(255,255,255,1),
+    0 0 16px rgba(120,180,255,0.9);
+}
+
+/* ===============================
+   STAR CURSOR
+=============================== */
+.cursor-star {
+  position: fixed;
+  width: 26px;
+  height: 26px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  animation: starRotate 4s linear infinite;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+/* STAR SHAPE (REAL STAR) */
+.cursor-star::before,
+.cursor-star::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ffffff;
+  box-shadow:
+    0 0 12px rgba(255,255,255,0.9),
+    0 0 24px rgba(120,180,255,0.8);
+}
+
+.cursor-star::before {
+  transform: rotate(45deg);
+}
+
+.cursor-star::after {
+  transform: rotate(0deg);
+}
+
+/* ===============================
+   CLICKABLE HOVER EFFECT
+=============================== */
+.cursor-star.active {
+  transform: translate(-50%, -50%) scale(1.8);
+  filter: drop-shadow(0 0 18px rgba(120,180,255,1));
+}
+
+/* ===============================
+   ROTATION
+=============================== */
+@keyframes starRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

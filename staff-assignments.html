@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Staff Assignments</title>
+
+   <link rel="stylesheet" href="css/global-cursor.css">
+    <link rel="stylesheet" href="css/staff-assignments.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <nav class="nav">
+            <a href="staff-dashboard.html">Dashboard</a>
+            <a href="staff-attendance.html">Attendance</a>
+            <a href="staff-assignments.html" class="active">Assignments</a>
+            <a href="staff-grievance.html">Grievance</a>
+            <a href="staff-announcements.html">Announcements</a>
+            <a href="staff-students.html">Students</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div>
+                <h1>Assignment Control Center</h1>
+                <p class="subtitle">
+                    Create, track, evaluate, and manage all student assignments
+                </p>
+            </div>
+
+            <div class="top-right">
+                <span class="live">● LIVE</span>
+                <span class="clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- ===============================
+             QUICK ACTIONS
+        =============================== -->
+        <section class="panel actions-panel">
+            <h2>Quick Actions</h2>
+
+            <div class="actions">
+                <button class="action-btn">+ Create Assignment</button>
+                <button class="action-btn">📤 Upload Resources</button>
+                <button class="action-btn">📊 View Submissions</button>
+            </div>
+        </section>
+
+        <!-- ===============================
+             ASSIGNMENT METRICS
+        =============================== -->
+        <section class="kpi">
+            <div class="kpi-card">
+                <h3>24</h3>
+                <span>Total Assignments</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>17</h3>
+                <span>Active</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>412</h3>
+                <span>Total Submissions</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>86%</h3>
+                <span>Avg Completion</span>
+            </div>
+
+            <div class="kpi-card">
+                <h3>38</h3>
+                <span>Pending Reviews</span>
+            </div>
+        </section>
+
+        <!-- ===============================
+             ASSIGNMENT LIST
+        =============================== -->
+        <section class="panel assignments-panel">
+            <h2>Active Assignments</h2>
+
+            <div class="assignment-table">
+
+                <!-- HEADER -->
+                <div class="table-row table-header">
+                    <span>ID</span>
+                    <span>Title</span>
+                    <span>Subject</span>
+                    <span>Deadline</span>
+                    <span>Submissions</span>
+                    <span>Status</span>
+                    <span>Actions</span>
+                </div>
+
+                <!-- ROW 1 -->
+                <div class="table-row">
+                    <span>ASG-101</span>
+                    <span>DBMS Normalization</span>
+                    <span>Database Systems</span>
+                    <span>20 Feb 2026</span>
+                    <span>72 / 80</span>
+                    <span class="status active">Active</span>
+                    <span class="row-actions">
+                        <button class="view">View</button>
+                        <button class="edit">Edit</button>
+                    </span>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="table-row">
+                    <span>ASG-114</span>
+                    <span>CPU Scheduling Report</span>
+                    <span>Operating Systems</span>
+                    <span>18 Feb 2026</span>
+                    <span>80 / 80</span>
+                    <span class="status completed">Completed</span>
+                    <span class="row-actions">
+                        <button class="view">View</button>
+                        <button class="grade">Grade</button>
+                    </span>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="table-row">
+                    <span>ASG-133</span>
+                    <span>Responsive Website</span>
+                    <span>Web Development</span>
+                    <span>25 Feb 2026</span>
+                    <span>41 / 80</span>
+                    <span class="status pending">Pending</span>
+                    <span class="row-actions">
+                        <button class="view">View</button>
+                        <button class="extend">Extend</button>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===============================
+             ACTIVITY FEED
+        =============================== -->
+        <section class="panel">
+            <h2>Assignment Activity</h2>
+            <div class="activity-feed"></div>
+        </section>
+
+    </main>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/staff-assignments.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- THEME ---------- */
+:root {
+    --bg-dark: #070b14;
+    --panel-dark: rgba(12, 18, 34, 0.9);
+    --card-dark: rgba(20, 28, 52, 0.85);
+    --neon-cyan: #00f6ff;
+    --neon-purple: #7a5cff;
+    --neon-pink: #ff2fd1;
+    --text-main: #e6f1ff;
+    --muted: rgba(230, 241, 255, 0.7);
+}
+
+/* ---------- BODY ---------- */
+body {
+    height: 100vh;
+    background: radial-gradient(1200px 600px at 10% 10%, #0c1633, #070b14);
+    font-family: "Poppins", system-ui, Arial, sans-serif;
+    color: var(--text-main);
+    overflow: hidden;
+}
+
+/* ---------- LAYOUT ---------- */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    width: 240px;
+    background: linear-gradient(180deg, #0b1022, #070b14);
+    padding: 30px 20px;
+    box-shadow: inset -1px 0 0 rgba(0,246,255,0.15);
+}
+
+.logo {
+    letter-spacing: 4px;
+    font-size: 22px;
+    color: var(--neon-cyan);
+    margin-bottom: 40px;
+    text-shadow: 0 0 12px var(--neon-cyan);
+}
+
+/* ---------- MENU ---------- */
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.nav-menu li a {
+    display: block;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* hover */
+.nav-menu li a:hover {
+    background: rgba(0,246,255,0.12);
+    color: var(--neon-cyan);
+    box-shadow: 0 0 14px rgba(0,246,255,0.6);
+}
+
+/* active */
+.nav-menu li.active a {
+    background: rgba(0,246,255,0.18);
+    color: var(--neon-cyan);
+    box-shadow: 0 0 18px rgba(0,246,255,0.8);
+}
+
+/* logout */
+.nav-menu li.logout a {
+    color: var(--neon-pink);
+}
+
+.nav-menu li.logout a:hover {
+    background: rgba(255,47,209,0.15);
+    box-shadow: 0 0 14px rgba(255,47,209,0.6);
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+/* ---------- TOP BAR ---------- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-bar h1 {
+    font-size: 26px;
+    text-shadow: 0 0 10px rgba(0,246,255,0.4);
+}
+
+.top-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.top-actions input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,246,255,0.3);
+    background: transparent;
+    color: var(--text-main);
+}
+
+.profile {
+    padding: 10px 16px;
+    background: rgba(0,246,255,0.15);
+    border-radius: 20px;
+    color: var(--neon-cyan);
+}
+
+/* ---------- GRID ---------- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    background: var(--card-dark);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow:
+        0 0 20px rgba(0,246,255,0.15),
+        inset 0 0 20px rgba(122,92,255,0.1);
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow:
+        0 0 30px rgba(0,246,255,0.5),
+        0 0 60px rgba(122,92,255,0.35);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: var(--neon-cyan);
+}
+
+/* ---------- STATS ---------- */
+.stats {
+    display: flex;
+    gap: 16px;
+}
+
+.stat-box {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.stat-box h4 {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.stat-box p {
+    margin-top: 6px;
+    font-size: 18px;
+    color: var(--neon-cyan);
+}
+
+/* ---------- LISTS ---------- */
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: none;
+    }
+}

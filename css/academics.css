@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0a1a33, #04070f 70%);
+    color: #e6f1ff;
+    min-height: 100vh;
+}
+
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR  (fix rahega)
+========================= */
+.sidebar {
+    width: 260px;
+    background: rgba(8, 18, 35, 0.9);
+    backdrop-filter: blur(18px);
+    border-right: 1px solid rgba(0, 255, 255, 0.15);
+    padding: 30px 20px;
+}
+
+.logo {
+    text-align: center;
+    color: #00ffff;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 18px rgba(0,255,255,0.8);
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+
+.nav-menu li {
+    margin-bottom: 10px;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #c7d6ff;
+    text-decoration: none;          
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li.active a {
+    background: rgba(0,255,255,0.14);
+    color: #ffffff;
+    box-shadow: 0 0 22px rgba(0,255,255,0.5);
+}
+
+
+.logout a {
+    margin-top: 30px;
+    color: #ff6b6b;
+}
+
+/* =========================
+   MAIN CONTENT YAHA SE SHURUUUU
+========================= */
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+/* =========================
+    CLASS 4 TOP BAR 
+========================= */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-bar h1 {
+    font-size: 32px;
+    color: #00ffff;
+    text-shadow: 0 0 20px rgba(0,255,255,0.7);
+}
+
+.top-actions select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(0,255,255,0.08);
+    border: 1px solid rgba(0,255,255,0.3);
+    color: #e6f1ff;
+}
+
+/* =========================
+    CARD STYLE
+========================= */
+.card {
+    background: rgba(12, 24, 48, 0.8);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(0,255,255,0.18);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px rgba(0,255,255,0.12);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 0 70px rgba(0,255,255,0.45);
+}
+
+/* =========================
+   ACADEMIC PROFILE
+========================= */
+.academic-profile h2 {
+    color: #00ffff;
+    margin-bottom: 16px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-grid p {
+    opacity: 0.9;
+}
+
+/* =========================
+   COURSES SECTION
+========================= */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: rgba(0,255,255,0.08);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(0,255,255,0.25);
+    transition: all 0.35s ease;
+}
+
+.course-card h3 {
+    font-size: 16px;
+    color: #00ffff;
+    margin-bottom: 8px;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 40px rgba(0,255,255,0.6);
+}
+
+/* =========================
+   PROGRESS TRACKING
+========================= */
+.progress-list {
+    list-style: none;
+}
+
+.progress-list li {
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: rgba(0,255,255,0.06);
+    border-left: 4px solid #00ffff;
+    transition: all 0.3s ease;
+}
+
+.progress-list li:hover {
+    background: rgba(0,255,255,0.18);
+    box-shadow: 0 0 26px rgba(0,255,255,0.6);
+}
+
+/* =========================
+   RESOURCES HUB
+========================= */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.resource-box {
+    padding: 22px;
+    border-radius: 16px;
+    background: linear-gradient(
+        135deg,
+        rgba(0,255,255,0.14),
+        rgba(122,92,255,0.12)
+    );
+    border: 1px solid rgba(0,255,255,0.3);
+    transition: all 0.35s ease;
+}
+
+.resource-box h4 {
+    color: #00ffff;
+    margin-bottom: 6px;
+}
+
+.resource-box:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 50px rgba(122,92,255,0.8);
+}
+
+/* =========================
+   ASSIGNMENTS TABLE
+========================= */
+.assignment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.assignment-table th,
+.assignment-table td {
+    padding: 14px;
+    text-align: left;
+}
+
+.assignment-table thead {
+    background: rgba(0,255,255,0.12);
+}
+
+.assignment-table tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background 0.3s ease;
+}
+
+.assignment-table tbody tr:hover {
+    background: rgba(0,255,255,0.14);
+}
+
+/* =========================
+   PERFORMANCE SNAPSHOT
+========================= */
+.performance-list {
+    list-style: none;
+}
+
+.performance-list li {
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: rgba(0,255,255,0.08);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.performance-list li:hover {
+    box-shadow: 0 0 30px rgba(0,255,255,0.6);
+}
+
+/* =========================
+   RESPONSIVE AND END
+========================= */
+@media (max-width: 900px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

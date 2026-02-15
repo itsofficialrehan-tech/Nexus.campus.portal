@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Admin – Announcements</title>
+    <link rel="stylesheet" href="css/admin-announcements.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <h2 class="logo">NEXUS</h2>
+        <ul class="nav-menu">
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-grievance.html">Grievances</a></li>
+            <li><a href="admin-students.html">Students</a></li>
+            <li><a href="admin-staff.html">Staff</a></li>
+            <li><a href="admin-internships.html">Internships</a></li>
+            <li class="active"><a href="admin-announcements.html">Announcements</a></li>
+            <li><a href="admin-attendance.html">Attendance</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="admin-top-bar">
+            <div>
+                <h1>Announcement Control</h1>
+                <p class="subtitle">Create & manage campus announcements</p>
+            </div>
+            <div class="top-actions">
+                <button class="create-btn">+ New Announcement</button>
+            </div>
+        </header>
+
+        <!-- ANNOUNCEMENTS LIST -->
+        <section class="card">
+            <h2>Published Announcements</h2>
+
+            <div class="announcement-list">
+                <div class="announcement-item">
+                    <h3>📢 Internship Fair</h3>
+                    <p>Campus internship fair on Friday at Auditorium.</p>
+                    <span class="tag published">Published</span>
+                </div>
+
+                <div class="announcement-item">
+                    <h3>⚠️ Attendance Review</h3>
+                    <p>Attendance review meeting next week.</p>
+                    <span class="tag draft">Draft</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<!-- MODAL -->
+<div class="modal hidden">
+    <div class="modal-box"></div>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/admin-announcements.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Grievance</title>
+    <link rel="stylesheet" href="css/grievance.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <ul class="nav-menu">
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li class="active"><a href="grievance.html">Grievance</a></li>
+            <li><a href="lost-found.html">Lost & Found</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <h1>Student Grievance Portal</h1>
+            <p class="subtitle">Raise issues, track status, and get resolutions</p>
+        </header>
+
+        <!-- RAISE GRIEVANCE -->
+        <section class="card grievance-form-card">
+            <h2>Raise a New Grievance</h2>
+
+            <form class="grievance-form">
+                <div class="form-group">
+                    <label>Grievance Category</label>
+                    <select id="grievanceType">
+                        <option value="">Select category</option>
+                        <option>Academic Issue</option>
+                        <option>Faculty Related</option>
+                        <option>Infrastructure</option>
+                        <option>Examination</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea
+                        id="grievanceMessage"
+                        placeholder="Describe your grievance clearly..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Grievance
+                </button>
+            </form>
+        </section>
+
+        <!-- MY GRIEVANCES -->
+        <section class="card grievance-list-card">
+            <h2>My Grievances</h2>
+            <div class="grievance-list"></div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section class="card grievance-timeline-card">
+            <h2>Grievance Resolution Flow</h2>
+            <ul class="timeline">
+                <li>Submitted by Student</li>
+                <li>Reviewed by Department</li>
+                <li>Action Taken</li>
+                <li>Resolved</li>
+            </ul>
+        </section>
+
+        <!-- INFO -->
+        <section class="card grievance-info-card">
+            <h2>Help & Guidelines</h2>
+            <p>
+                All grievances are handled confidentially. Please ensure accurate
+                information for faster resolution.
+            </p>
+        </section>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/grievance.js"></script>
+</body>
+</html>

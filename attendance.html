@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Attendance</title>
+    <link rel="stylesheet" href="css/attendance.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+        <h2 class="logo">NEXUS</h2>
+
+        <ul class="nav-menu">
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li class="active"><a href="attendance.html">Attendance</a></li>
+            <li><a href="internships.html">Interships</a></li>
+            <li><a href="grievance.html">Grievance</a></li>
+            <li><a href="#">Lost & Found</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <h1>Attendance Overview</h1>
+
+            <div class="top-actions">
+                <select>
+                    <option>Monthly</option>
+                    <option>Semester</option>
+                    <option>Yearly</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- STUDENT DETAILS -->
+        <section class="student-details card">
+            <div class="student-info">
+                <h2>Rehan Khan</h2>
+                <p><strong>ID:</strong> NX-2026-001</p>
+                <p><strong>Email:</strong> rehan@student.campus.edu</p>
+                <p><strong>Course:</strong> BCA – AI</p>
+            </div>
+        </section>
+
+        <!-- ATTENDANCE SUMMARY -->
+        <section class="attendance-summary">
+
+            <div class="summary-card present">
+                <h3>13 Days</h3>
+                <p>Total Present</p>
+            </div>
+
+            <div class="summary-card late">
+                <h3>7 Days</h3>
+                <p>Late Attendance</p>
+            </div>
+
+            <div class="summary-card halfday">
+                <h3>1 Day</h3>
+                <p>Half Day</p>
+            </div>
+
+            <div class="summary-card absent">
+                <h3>2 Days</h3>
+                <p>Total Absent</p>
+            </div>
+
+        </section>
+
+        <!-- ATTENDANCE RATE -->
+        <section class="attendance-rate card">
+            <h3>Attendance Rate</h3>
+            <div class="rate-value">56%</div>
+
+            <div class="monthly-rate">
+                <div class="month">January – 57%</div>
+                <div class="month">February – 55%</div>
+                <div class="month">March – 56%</div>
+            </div>
+        </section>
+
+        <!-- SUBJECT WISE ATTENDANCE -->
+        <section class="subject-attendance card">
+            <h3>Subject-wise Attendance</h3>
+
+            <ul>
+                <li>DBMS – 82%</li>
+                <li>Operating Systems – 76%</li>
+                <li>Computer Networks – 88%</li>
+                <li>Web Development – 91%</li>
+                <li>Software Engineering – 79%</li>
+            </ul>
+        </section>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/attendance.js"></script>
+</body>
+</html>

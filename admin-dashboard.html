@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Campus | Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+    <link rel="stylesheet" href="css/global-cursor.css">
+</head>
+<body>
+
+<div class="dashboard-container admin-theme">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar admin-sidebar">
+        <h2 class="logo">NEXUS ADMIN</h2>
+
+        <ul class="nav-menu">
+            <li class="active"><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-students.html">Students</a></li>
+            <li><a href="admin-staff.html">Staff</a></li>
+            <li><a href="admin-grievance.html">Grievances</a></li>
+            <li><a href="admin-lost-found.html">Lost & Found</a></li>
+            <li><a href="admin-announcements.html">Announcements</a></li>
+            <li><a href="admin-internships.html">Internships</a></li>
+            <li><a href="admin-attendance.html">Attendance</a></li>
+            <li class="logout"><a href="login.html">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar admin-top-bar">
+            <div>
+                <h1>Admin Control Center</h1>
+                <p class="subtitle">System overview & authority panel</p>
+            </div>
+
+            <div class="admin-profile">
+                <span>Administrator</span>
+            </div>
+        </header>
+
+        <!-- STATS GRID -->
+        <section class="admin-stats">
+
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p>1,240</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Staff</h3>
+                <p>86</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending Grievances</h3>
+                <p>14</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Open Internships</h3>
+                <p>22</p>
+            </div>
+
+        </section>
+
+        <!-- MANAGEMENT OVERVIEW -->
+        <section class="card admin-overview-card">
+            <h2>Administrative Overview</h2>
+
+            <p>
+                As an administrator, you have full control over student records,
+                staff management, grievance resolution, announcements, and
+                internship postings across the campus platform.
+            </p>
+
+            <ul class="admin-points">
+                <li>✔ Monitor and resolve student grievances</li>
+                <li>✔ Manage students and staff records</li>
+                <li>✔ Publish official announcements</li>
+                <li>✔ Control internship opportunities</li>
+            </ul>
+        </section>
+
+        <!-- QUICK ACTIONS -->
+        <section class="card admin-actions-card">
+            <h2>Quick Actions</h2>
+
+            <div class="actions-grid">
+                <a href="admin-grievance.html" class="action-box">Resolve Grievances</a>
+                <a href="admin-announcements.html" class="action-box">Post Announcement</a>
+                <a href="admin-internships.html" class="action-box">Add Internship</a>
+                <a href="admin-students.html" class="action-box">Manage Students</a>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-star"></div>
+<script src="js/global-cursor.js"></script>
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>
