@@ -1,123 +1,229 @@
-🚀 Nexus Campus Portal
+# 🚀 Nexus Campus Portal
 
-A unified digital platform designed to streamline campus life by integrating academic resources, grievance handling, and opportunity discovery into a single, scalable ecosystem.
+Nexus Campus Portal is a role-based campus management web application designed to demonstrate a modern, scalable, and API-driven digital campus system.  
+This project was built for a hackathon to showcase frontend–backend integration, authentication, and real-world campus workflows.
 
-🧩 Problem Statement
+---
 
-Modern campus systems often operate in silos — grievance portals, academic tracking, internship listings, and announcements exist on separate platforms. This fragmentation leads to poor user experience, inefficiency, and lack of transparency.
+## 📌 Problem Statement
 
-Nexus Campus addresses this problem by providing a centralized, role-based digital campus portal that connects students, faculty, and administrators through a single interface.
+Most colleges still rely on:
+- Manual grievance systems
+- Scattered internship information
+- No role-based access for students, staff, and admins
+- Poor transparency in issue tracking
 
-🌐 Live Deployment
+This results in inefficiency, lack of accountability, and a bad user experience.
 
-🔗 Live Website:
+---
+
+## ✅ Solution
+
+Nexus Campus Portal solves this by providing:
+- A **single unified digital platform**
+- **Role-based dashboards** (Student / Admin / Staff)
+- **JWT-secured authentication**
+- **API-driven modules** for internships and grievances
+- Clean, modern, responsive UI
+
+---
+
+## 🧩 Core Features
+
+### 🔐 Authentication
+- Secure login using JWT
+- Role-based access control
+- Protected API routes
+
+### 🎓 Student Module
+- View available internships (API-driven)
+- Apply for internships
+- Submit grievances
+- Track grievance status
+
+### 🧑‍💼 Admin Module
+- View all grievances submitted by students
+- Change grievance status (Pending / In Review / Resolved)
+- Monitor platform activity
+
+### 🧑‍🏫 Staff / Teacher (Demo)
+- Dedicated role flow (UI + logic ready)
+- Can be extended with academic features
+
+### 🎯 UI & UX
+- Modern dashboard layout
+- Custom animated cursor
+- Smooth transitions
+- Dark-mode friendly design
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+### Backend
+- Node.js
+- Express.js
+- JWT Authentication
+
+### Tools
+- Requestly (API testing & demo)
+- GitHub Pages (Frontend deployment)
+
+---
+
+## 🔗 Live Frontend Demo
+
+👉 **Frontend Live Link**  
+https://itsofficialrehan-tech.github.io/Nexus.campus.portal/
+
+> ⚠️ Note: GitHub Pages supports frontend only.  
+> Backend APIs are demonstrated locally and via Requestly (shown in the demo video).
+
+---
+
+## 📂 Project Structure
+
+Nexus.campus.portal/ │ ├── frontend/ │   ├── index.html │   ├── login.html │   ├── student-dashboard.html │   ├── admin-dashboard.html │   ├── internships.html │   ├── grievance.html │   ├── css/ │   └── js/ │ ├── backend/ │   ├── server.js │   ├── routes/ │   │   ├── internship.routes.js │   │   └── grievance.routes.js │   └── middleware/ │ └── README.md
+
+---
+
+## ⚙️ How to Run Frontend Locally
+
+### Method 1: Using Live Server (Recommended)
+1. Open the project in **VS Code**
+2. Right-click on `index.html`
+3. Select **Open with Live Server**
+
+### Method 2: Direct Browser
+1. Open `index.html`
+2. Run in any modern browser (Chrome recommended)
+
+---
+
+## ⚙️ How to Run Backend Locally
+
+### Prerequisites
+- Node.js installed
+
+### Steps
+```bash
+cd backend
+npm install
+node server.js
+
+Backend will run on:
+
+http://localhost:5000
 
 
-👥 User Roles (Planned Architecture)
+---
 
-Student – View resources, internships, submit grievances
+🔌 API Integration Overview
 
-Faculty – Academic management & communication
+Authentication
 
-Admin / Authority – Grievance resolution, announcements, monitoring
+POST /api/auth/login
 
-⚠️ Role-based access control is part of the planned backend implementation.
+Returns JWT token
 
-✨ Core Features
-🔐 Authentication (UI Implemented, Backend Planned)
 
-Role-based login interface (Student / Faculty / Admin)
+Internships
 
-Secure authentication planned using JWT
+GET /api/internships
 
-📮 Grievance Management
+POST /api/internships/apply
 
-Digital grievance submission
 
-Status-based tracking system 
+Grievances
 
-📚 Academic & Resource Module
+POST /api/grievance
 
-Centralized academic resources
+GET /api/grievance/my
 
-Modular structure for course tracking
+GET /api/admin/grievances
 
-💼 Internship & Opportunity Portal
 
-Internship listings and opportunities
+All protected routes require:
 
-API-ready architecture for real-time data integration
+Authorization: Bearer <JWT_TOKEN>
 
-🛠️ Tech Stack
-Frontend
 
-HTML5
+---
 
-CSS3 (Neon / Cyber UI theme)
+🧪 API Testing & Demo
 
-Vanilla JavaScript
+APIs tested using Requestly
 
-Deployment
+Live network calls shown in the demo video
 
-GitHub Pages
+Demonstrates real backend execution (not static UI)
 
-Backend (Planned)
 
-Node.js
 
-Express.js
+---
 
-JWT Authentication
+📈 Future Enhancements
 
-REST APIs
+Database integration (MongoDB / PostgreSQL)
 
-MongoDB
+Real internship provider APIs
 
-🏗️ System Architecture (Planned)
+Email & notification system
 
-Modular frontend architecture
+File uploads (documents, resumes)
 
-API-driven backend services
+Analytics dashboard for admin
+
+Production deployment (Render / Railway)
+
+
+
+---
+
+🎥 Demo Video
+
+A full walkthrough video is provided showing:https://www.youtube.com/watch?v=DYQAKHGnuZE
+
+Frontend flow
+
+Login & JWT authentication
+
+Internship API calls
+
+Grievance workflow
+
+Admin dashboard functionality
+
+
+
+---
+
+👨‍💻 Author
+
+Rehan Khan
+Frontend & Backend Developer
+Hackathon Participant
+
+
+---
+
+⭐ Conclusion
+
+Nexus Campus Portal demonstrates:
+
+Clean architecture
+
+Real-world API usage
 
 Role-based access control
 
-Scalable microservice-ready design
-
-Current submission focuses on frontend completeness and system design clarity.
-
-▶️ How to Run Locally
-
-Clone the repository
-
-git clone 
+Hackathon-ready full-stack development
 
 
-Open index.html in your browser
-(No server required for frontend)
+Built with scalability and real campus needs in mind.
 
-📌 Project Status
-
-✅ Frontend UI completed
-
-✅ Live deployment completed
-
- ✅ Backend development complete
-
-🎥 Demo video link of youtube
-
-🚀 Future Enhancements
-
-Full backend integration
-Real-time APIs for internships & academics
-Secure JWT-based authentication
-Admin dashboard analytics
-Database-backed grievance tracking
-
-👨‍💻 Team
-
-Team Coding Hunters
-CrackHack 2026 – Web Development Track
-
-🏁 Conclusion
-
-Nexus Campus lays a strong foundation for a scalable and unified campus management system by prioritizing clean UI/UX, modular design, and extensibility for future backend integration.
